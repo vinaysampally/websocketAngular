@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import Stomp from 'stompjs';
-import SockJS from 'sockjs-client';
-import $ from 'jquery';
+import * as Stomp from 'stompjs';
+import * as SockJS from 'sockjs-client';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private serverUrl = 'http://192.168.1.119:8888/socket'
+  private serverUrl = 'http://127.0.0.1:8888/socket'
   private title = 'WebSockets chat';
   private stompClient;
 
